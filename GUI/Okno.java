@@ -10,7 +10,7 @@ public class Okno extends JFrame {
     Color refKolor = Color.BLACK;
     int limit = 100;
     int Xc;      //
-    int Yc;      // zbêdne
+    int Yc;      // zbÃªdne
     int Rc = 20; //
    
     Okno(String nazwaOkna){
