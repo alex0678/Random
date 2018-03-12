@@ -10,30 +10,30 @@ public class Muzyka {
        
         Kompozytor kompozytor1 = new Kompozytor("Jan",  "Kowalski", "XVII ", 39, new Dzielo[]{Dzielo.Mazurek3, Dzielo.Koncert1, Dzielo.Koncert3, Dzielo.Sonata1, Dzielo.Sonata2});
         Kompozytor kompozytor2 = new Kompozytor("Piotr",  "Nowak", "XX   ", 65, new Dzielo[]{Dzielo.Koncert1, Dzielo.Koncert2, Dzielo.Koncert3, Dzielo.Mazurek1, Dzielo.Mazurek2});
-        Kompozytor kompozytor3 = new Kompozytor(new Dzielo[]{Dzielo.Sonata1, Dzielo.Sonata2, Dzielo.Koncert2, Dzielo.Mazurek1, Dzielo.Mazurek2}); //dzie≥a ustawione poprzez konstruktor
+        Kompozytor kompozytor3 = new Kompozytor(new Dzielo[]{Dzielo.Sonata1, Dzielo.Sonata2, Dzielo.Koncert2, Dzielo.Mazurek1, Dzielo.Mazurek2}); //dzie≈Ça ustawione poprzez konstruktor
        
         Scanner sc = new Scanner(System.in);
         System.out.print("Podaj imie kompozytora 3. : ");
         kompozytor3.imie = sc.next();
         System.out.print("Podaj nazwisko kompozytora 3. : ");
         kompozytor3.nazwisko = sc.next();
-        System.out.print("Podaj wiek twÛrczoúci kompozytora 3. : ");
+        System.out.print("Podaj wiek tw√≥rczo≈õci kompozytora 3. : ");
         kompozytor3.wiekTworczosci = sc.next();
         while (kompozytor3.wiekTworczosci.length() < 5)
-            kompozytor3.wiekTworczosci += " "; //dope≥nienie d≥ugoúci wieku twÛrczoúci do 5 znakÛw spacjami
+            kompozytor3.wiekTworczosci += " "; //dope≈Çnienie d≈Çugo≈õci wieku tw√≥rczo≈õci do 5 znak√≥w spacjami
        
         System.out.print("Podaj wiek kompozytora 3. : ");
         kompozytor3.wiekMuzyka = sc.nextInt();
-        kompozytor3.utwory = new Dzielo[]{Dzielo.Sonata1, Dzielo.Sonata2, Dzielo.Koncert2, Dzielo.Mazurek1, Dzielo.Mazurek2}; //dzie≥a ustawione rÍcznie
+        kompozytor3.utwory = new Dzielo[]{Dzielo.Sonata1, Dzielo.Sonata2, Dzielo.Koncert2, Dzielo.Mazurek1, Dzielo.Mazurek2}; //dzie≈Ça ustawione rƒôcznie
        
         System.out.println(""); //pusta linia
          
-        if (kompozytor1.sprawdzWiekTworczosci() != 0) //nie wykona siÍ, jeøeli metoda zwrÛci≥a 0
-            System.out.println("Wiek twÛrczoúci kompozytora "+kompozytor1.imie+" "+kompozytor1.nazwisko+", zapisany dziesiÍtnie to: "+kompozytor1.sprawdzWiekTworczosci()+".");
+        if (kompozytor1.sprawdzWiekTworczosci() != 0) //nie wykona siƒô, je≈ºeli metoda zwr√≥ci≈Ça 0
+            System.out.println("Wiek tw√≥rczo≈õci kompozytora "+kompozytor1.imie+" "+kompozytor1.nazwisko+", zapisany dziesiƒôtnie to: "+kompozytor1.sprawdzWiekTworczosci()+".");
         if (kompozytor2.sprawdzWiekTworczosci() != 0)
-            System.out.println("Wiek twÛrczoúci kompozytora "+kompozytor2.imie+" "+kompozytor2.nazwisko+", zapisany dziesiÍtnie to: "+kompozytor2.sprawdzWiekTworczosci()+".");
+            System.out.println("Wiek tw√≥rczo≈õci kompozytora "+kompozytor2.imie+" "+kompozytor2.nazwisko+", zapisany dziesiƒôtnie to: "+kompozytor2.sprawdzWiekTworczosci()+".");
         if (kompozytor3.sprawdzWiekTworczosci() != 0)
-            System.out.println("Wiek twÛrczoúci kompozytora "+kompozytor3.imie+" "+kompozytor3.nazwisko+", zapisany dziesiÍtnie to: "+kompozytor3.sprawdzWiekTworczosci()+".");
+            System.out.println("Wiek tw√≥rczo≈õci kompozytora "+kompozytor3.imie+" "+kompozytor3.nazwisko+", zapisany dziesiƒôtnie to: "+kompozytor3.sprawdzWiekTworczosci()+".");
        
         System.out.println(""); //pusta linia
        
