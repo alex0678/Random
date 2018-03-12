@@ -22,9 +22,9 @@ public class Kompozytor {
    
     public int sprawdzWiekTworczosci(){
         int wiekDec = 0;
-        char[] litery = this.wiekTworczosci.toUpperCase().toCharArray(); //toUpperCase rozwi¹zuje problem ma³ych i wielkich liter
+        char[] litery = this.wiekTworczosci.toUpperCase().toCharArray(); //toUpperCase rozwiÄ…zuje problem maÅ‚ych i wielkich liter
         if (litery.length != 5){
-            System.out.println("D³ugoœæ pola wiekTwórczoœci jest ró¿na od 5!");
+            System.out.println("DÅ‚ugoÅ›Ä‡ pola wiekTwÃ³rczoÅ›ci jest rÃ³Å¼na od 5!");
             return 0;
         }
         for (char l : litery)
@@ -45,8 +45,8 @@ public class Kompozytor {
                     break;
                    
                 default:
-                    System.out.println("Podany wiek twórczoœci ma b³¹d!");
-                    return 0; //je¿eli litera nie jest liter¹ rzymsk¹ ani spacj¹, zwracamy kod b³êdu
+                    System.out.println("Podany wiek twÃ³rczoÅ›ci ma bÅ‚Ä…d!");
+                    return 0; //jeÅ¼eli litera nie jest literÄ… rzymskÄ… ani spacjÄ…, zwracamy kod bÅ‚Ä™du
             }
         return wiekDec;
     }
@@ -58,14 +58,14 @@ public class Kompozytor {
     }
    
     public void wyswietlStatystyki(){
-        System.out.println("Imiê: "+this.imie);
+        System.out.println("ImiÄ™: "+this.imie);
         System.out.println("Nazwisko: "+this.nazwisko);
-        System.out.println("Wiek twórczoœci: "+this.wiekTworczosci);
+        System.out.println("Wiek twÃ³rczoÅ›ci: "+this.wiekTworczosci);
         System.out.println("Wiek: "+this.wiekMuzyka);
-        System.out.println("Dzie³a: ");
+        System.out.println("DzieÅ‚a: ");
         for (Dzielo u : this.utwory)
             System.out.println("- "+u.toString()+",");
-        System.out.println("Kompozytorowi zabrak³o "+this.ileLatZabraklo(this.sprawdzWiekTworczosci())+" lat do nastêpnego koncertu...");
+        System.out.println("Kompozytorowi zabrakÅ‚o "+this.ileLatZabraklo(this.sprawdzWiekTworczosci())+" lat do nastÄ™pnego koncertu...");
         System.out.println(""); //pusta linia
     }
 }
