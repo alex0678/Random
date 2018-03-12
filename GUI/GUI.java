@@ -8,8 +8,8 @@ import javax.swing.*;
 public class GUI {
  
     public static void main(String[] args) {
-        Okno okno = new Okno("Sprê¿yna");
-        okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //zapobiegnie to nagromadzeniu procesów Javy pomimo zamykania okienek
+        Okno okno = new Okno("SprÃªÂ¿yna");
+        okno.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //zapobiegnie to nagromadzeniu procesÃ³w Javy pomimo zamykania okienek
         okno.setVisible(true);
         okno.setSize(500, 300);
         okno.setResizable(false);        
@@ -18,11 +18,11 @@ public class GUI {
         JPanel panel = new JPanel();
         panel.setLayout(new FlowLayout());
        
-        JCheckBox checkbox = new JCheckBox("Zezwól na zmianê koloru");
+        JCheckBox checkbox = new JCheckBox("ZezwÃ³l na zmianÃª koloru");
         checkbox.setFocusable(false);
         panel.add(checkbox);
        
-        JLabel label = new JLabel("Skróæ sprê¿ynê");
+        JLabel label = new JLabel("SkrÃ³Ã¦ sprÃªÂ¿ynÃª");
         panel.add(label);
        
         okno.add(panel, BorderLayout.SOUTH);
@@ -63,7 +63,7 @@ public class GUI {
             public void mouseDragged(MouseEvent me){
                 if (okno.okregi.size() > 100)
                     okno.okregi.remove(0);
-                okno.okregi.add(new Point(me.getLocationOnScreen().x-okno.getLocationOnScreen().x, me.getLocationOnScreen().y-okno.getLocationOnScreen().y)); //poprawka na zmainê po³o¿enia okna
+                okno.okregi.add(new Point(me.getLocationOnScreen().x-okno.getLocationOnScreen().x, me.getLocationOnScreen().y-okno.getLocationOnScreen().y)); //poprawka na zmainÃª poÂ³oÂ¿enia okna
                 okno.repaint();
             }
         });   
